@@ -3,10 +3,11 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/food-background.webp')  ;
-    background-size: 800px auto;
-    background-repeat: no-repeat;
-    background-position: 0 40px;
+    box-sizing: border-box;
+}
+
+a  {
+    text-decoration: none;
 }
 
 header {
@@ -39,4 +40,55 @@ header .nav-links {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+}
+
+.content {
+    width: 80%;
+    height: 520px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    flex: 3 0 100%;
+}
+
+.content .text-content {
+    flex: 0 0 100%;
+    width: 30%;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #E63946;
+    padding: 10px 20px;
+    border: solid 2px #E63946;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #E63946;
+    color: #fff;
+    transition: 0.3s ease;
 }
