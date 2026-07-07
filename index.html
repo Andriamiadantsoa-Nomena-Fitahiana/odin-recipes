@@ -5,29 +5,58 @@
     <title>Odin Recipes</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">Odin Recipes</div>    
         <ul class="nav-links">
-            <li><a href="./recipes/stuffed_eggplant.html">Home</a></li>
-            <li><a href="./recipes/caprese-stuffed-avocado.html">Recipes</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
             <li><a href="./recipes/mediterranean-stuffed-zucchini.html">About</a></li>
         </ul>
     </header>
-    <div class="content">
+    <div class="hero-section">
         <img src="./assets/food-background.webp" alt="Food Background" class="background-image">
         <div class="text-content">
-            <h1>Welcome to Odin Recipes</h1>
+            <h1 id="home">Welcome to Odin Recipes</h1>
             <p>Discover delicious and easy-to-make recipes
              that will satisfy your taste buds.
               Whether you're a beginner or a seasoned chef, 
               our collection of recipes has something 
               for everyone. Explore our selection and
                find your next favorite dish!</p>
-        <div class="button">
-            Explore
         </div>
-    </div>          
+        <!-- <div class="button">
+            Explore
+        </div> -->
+    </div>
+    <div class="godown">
+        <a href="#recipes"><i class="fas fa-arrow-down"></i></a>
+    </div>
+    <div id="recipes" class="recipes-section">
+        <div class="recipes-intro">Choose over 100+ Recipes</div>
+        <div class="recipes">
+            <img src="./recipes/image/caprese-stuffed-avocado-50-percent-resized.webp" alt="Food Background" class="background-image">
+            <div class="text-content">
+                <p>Caprese Stuffed Avocado</p>
+            </div>
+            <div class="button">Explore</div>
+        </div>
+        <div class="recipes">
+            <img src="./recipes/image/mediterranean-stuffed-zucchini-50-percent-resized.webp" alt="Food Background" class="background-image">
+            <div class="text-content">
+                <p>Meditteranean Stuffed Zucchini</p>
+            </div>
+            <div class="button">Explore</div>
+        </div>
+        <div class="recipes">
+            <img src="./recipes/image/stuffed-eggplant-50-percent-resized.webp" alt="Food Background" class="background-image">
+            <div class="text-content">
+                <p>Stuffed Eggplant</p>
+            </div>
+            <div class="button">Explore</div>
+        </div>
+    </div>
 </body>
 </html>
