@@ -1,5 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -8,7 +9,6 @@ body {
 
 a  {
     text-decoration: none;
-    
 }
 
 header {
@@ -80,16 +80,13 @@ header .nav-links {
     text-align: center;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     flex-wrap: wrap;
-    row-gap: 0px;
     justify-content: space-around;
 }
 
 .recipes-intro {
     font-size: 1.5em;
     font-weight: bold;
-    /* margin-bottom: 20px; */
     color: #333;
     flex: 0 0 100% ;
     align-content: center;
@@ -106,7 +103,6 @@ header .nav-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
-    gap: 20px;
 }
 
 .recipes img {
@@ -117,9 +113,7 @@ header .nav-links {
 }
 
 .recipes .text-content {
-    flex: 0 0 100%;
-    /* width: 30%; */
-    text-align: center; 
+    flex: 0 0 100%; 
 }
 
 p {
@@ -130,16 +124,17 @@ p {
 }
 
 .button {
-    display: block;
-    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 1em;
     margin: 20px auto;
     padding: 7px 0px;
     font-weight: bold;
+    font-size: 1em;
     color: #E63946;
     border: solid 2px #E63946;
     border-radius: 4px;
-    font-size: 1em;
     cursor: pointer;
     flex: 0 0 30%;
 }
@@ -156,6 +151,7 @@ p {
     bottom: 10%;
     font-size: 2em;
 }
+
 
 html  {
     scroll-behavior: smooth;
